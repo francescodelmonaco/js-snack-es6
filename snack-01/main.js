@@ -24,3 +24,13 @@ const biciDaCorsa = [
         peso: 7.4 // peso in kg
     }
 ];
+
+let biciLeggera = biciDaCorsa[0];
+
+for (let i=0; i<biciDaCorsa.length; i++) {
+    if (biciDaCorsa[i].peso < biciLeggera.peso) {
+        biciLeggera = biciDaCorsa[i];
+    }
+}
+
+console.log(`La bici più leggera è: ${biciLeggera.nome} con un peso di ${biciLeggera.peso} kg.`)
