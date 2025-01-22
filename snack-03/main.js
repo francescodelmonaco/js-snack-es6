@@ -4,3 +4,15 @@
 const nomi = ['Michele', 'Fabio', 'Roberto', 'Giovanni', 'Simone', 'Chiara'];
 const a = 1;
 const b = 4;
+
+function estrazione(nomi, a, b) {
+    const nomiEstratti = [];
+    
+    for (let i = ++a; i < b; i++) {
+        nomiEstratti.push(nomi[i]);
+    }
+
+    return nomiEstratti;
+}
+
+console.log(estrazione(nomi, a, b));
