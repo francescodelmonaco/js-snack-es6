@@ -27,7 +27,7 @@ const biciDaCorsa = [
 
 let biciLeggera = biciDaCorsa[0];
 
-for (let i=0; i<biciDaCorsa.length; i++) {
+for (let i = 0; i < biciDaCorsa.length; i++) {
     if (biciDaCorsa[i].peso < biciLeggera.peso) {
         biciLeggera = biciDaCorsa[i];
     }

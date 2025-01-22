@@ -31,3 +31,17 @@ const squadreDiCalcio = [
         falliSubiti: 0
     }
 ];
+
+for (let i = 0; i < squadreDiCalcio.length; i++) {
+    squadreDiCalcio[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
+    squadreDiCalcio[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
+}
+
+let array = [];
+
+for (let i = 0; i < squadreDiCalcio.length; i++) {
+    array.push(squadreDiCalcio[i].nome);
+    array.push(squadreDiCalcio[i].falliSubiti);
+}
+
+console.log(array);
