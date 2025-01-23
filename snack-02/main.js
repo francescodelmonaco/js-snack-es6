@@ -32,14 +32,11 @@ const squadreDiCalcio = [
     }
 ];
 
-for (let i = 0; i < squadreDiCalcio.length; i++) {
-    squadreDiCalcio[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
-    squadreDiCalcio[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
-}
-
 let array = [];
 
 for (let i = 0; i < squadreDiCalcio.length; i++) {
+    squadreDiCalcio[i].puntiFatti = Math.floor(Math.random() * 100) + 1;
+    squadreDiCalcio[i].falliSubiti = Math.floor(Math.random() * 100) + 1;
     array.push(squadreDiCalcio[i].nome);
     array.push(squadreDiCalcio[i].falliSubiti);
 }
